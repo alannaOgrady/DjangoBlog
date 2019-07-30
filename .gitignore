@@ -1,0 +1,13 @@
+
+*.pyc
+*~
+__pycache__
+venv
+db.sqlite3
+/static
+.DS_Store
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
