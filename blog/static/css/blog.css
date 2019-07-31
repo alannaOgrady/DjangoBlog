@@ -12,14 +12,17 @@
 
 .content {
     margin-left: 40px;
+    width: 100%;
 }
 
 h1, h2, h3, h4 {
-    color: #E71F12;
     font-family: 'Abril Fatface', cursive;
 }
+
 .date {
     color: #828282;
+    float: right;
+    padding: 10px
 }
 
 .save {
