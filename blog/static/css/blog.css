@@ -21,8 +21,8 @@ h1, h2, h3, h4 {
 
 .date {
     color: #828282;
-    float: right;
-    padding: 10px
+    font: 10pt;
+    float: left;
 }
 
 .save {
@@ -44,6 +44,20 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h1 a,.post h2 a, .post h2 a:visited {
     color: #000000;
+}
+
+.button {
+  background-color: #E3E2E2;
+  color: black;
+  border: 2px solid #DEDEDE;
+  float: right;
+  padding: 6px 12px 7px 12px
+
+}
+
+.button:hover {
+  background-color: #E8E8E8;
+  color: black
 }
