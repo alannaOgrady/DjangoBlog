@@ -9,16 +9,12 @@
                 <h1><a href="/">Alanna's Blog</a></h1>
             </div>
 
-            <div>
-                <p>published: 30.07.2019, 12:14</p>
-                <h2><a href="">My first post</a></h2>
-                <p>This is my first blog post, written while developing this blog through a django girls tutorial!</p>
-            </div>
-
-            <div>
-                <p>published: 30.07.2019, 12:14</p>
-                <h2><a href="">My second post</a></h2>
-                <p>My second post. Still just testing.</p>
-            </div>
+            {% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <p>{{ post.text|linebreaksbr }}</p>     #linebreaksbr - to convert line breaks to paragraphs
+                </div>
+            {% endfor %}
     </body>
 </html>
